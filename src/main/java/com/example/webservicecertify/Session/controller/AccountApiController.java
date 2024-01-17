@@ -17,7 +17,7 @@ public class AccountApiController {
     private final UserService userService;
 
 
-    @PostMapping("/login")
+    @PostMapping("/login/session")
     public void login(@RequestBody LoginRequest loginRequest, HttpSession httpSession){
         userService.login(loginRequest, httpSession);
     }

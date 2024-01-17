@@ -90,7 +90,7 @@
             var password = $('#password').val();
 
             $.ajax({
-                url: '/api/account/login',
+                url: '/api/account/login/cookie',  // session / cookie
                 method: 'POST',
                 contentType: 'application/json', // JSON 형식으로 데이터 전송
                 dataType: 'json', // 받아오는 데이터 타입을 JSON으로 설정
